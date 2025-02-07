@@ -437,6 +437,8 @@ header .links .loging_signup a{
 .product{
     position: relative;
     background: #fff;
+    display: flex;
+    flex-wrap: wrap;
     padding: 20px 30px;
     text-align: center;
     overflow: hidden;
@@ -444,6 +446,7 @@ header .links .loging_signup a{
     border: 1px solid var(--border-color);
     border-radius: 5px;
     width: 25%;
+    margin: 3px;
 }
 .product .sale_present{
     position: absolute;
