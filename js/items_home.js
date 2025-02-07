@@ -2,17 +2,23 @@ fetch('js/items.json')
             .then(response => response.json())
             .then(data => {
                 const  swiper_items_sale = document.getElementById("swiper_items_sale")
+
+                all_products_json = data
+
                 data.forEach(product => {
                     if(product.old_price){
+
+                        const percent_disc = Math.floor((product.old_price - product.price) / product.old_price * 100)
+
                         swiper_items_sale.innerHTML += `
                         <div class="product swiper-slider">
 
                         <div class="icons">
-                            <span><i class="fa-solid fa-cart-arrow-down"></i></span>
+                            <span><i onclick = "addToCart(${product.id}, this)" class="fa-solid fa-cart-arrow-down"></i></span>
                             <span><i class="fa-solid fa-heart"></i></span>
                             <span><i class="fa-solid fa-share"></i></span>
                         </div>
-                        <span class="sale_present">%10</span>
+                        <span class="sale_present">${percent_disc} %</span>
 
                         <div class="img_product">
                             <img src="${product.img}" alt="">
