@@ -32,9 +32,24 @@ function getCartItems(){
             <h4>${product_cart[i].name}</h4>
             <p class="price_cart">$${product_cart[i].price}</p>
         </div>
-        <button class="delete_item"><i class="fa-solid fa-trash"></i></button>
+        <button onclick = "remov_from_cart(${i})" class="delete_item"><i class="fa-solid fa-trash"></i></button>
     </div>
         `
     }
     items_in_cart.innerHTML = items_c;
+}
+
+function remov_from_cart(index){
+    product_cart.splice(index,1)
+    getCartItems();
+
+    let addToCartButtons = document.querySelectorAll(".fa-cart-arrow-down")
+    for(let i = 0; i < addToCartButtons.length; i++){
+        addToCartButtons[i].classList.remove("active");
+        product_cart.forEach(product =>{
+            if (product.id == i) {
+                addToCartButtons[i].classList.add("active");
+            }
+        });
+    }
 }
