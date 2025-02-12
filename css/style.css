@@ -401,6 +401,10 @@ header .links .loging_signup a{
     height: 100%;
     z-index: 100;
 }
+.banner_big.banner .container .banner_img{
+    width: 49%;
+    position: relative;
+}
 
 /* end banner*/
 
