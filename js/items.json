@@ -56,21 +56,7 @@
         "price": 225,
         "old_price": 280
     },
-    {
-        "id": 7,
-        "img": "img/product/product8.jpg",
-        "img_hover": "img/product/product-8.jpg",
-        "name": "Original Mobile Android Dual SIM Smart Phone G3",
-        "price": 150,
-        "old_price": 200
-    },
-    {
-        "id": 8,
-        "img": "img/product/product-1.jpg",
-        "img_hover": "img/product/product1.jpg",
-        "name": "Original Mobile Android Dual SIM Smart Phone G3",
-        "price": 180
-    },
+    
     {
         "id": 9,
         "img": "img/product/product-2.jpg",
@@ -105,19 +91,5 @@
         "img_hover": "img/product/product6.jpg",
         "name": "Original Mobile Android Dual SIM Smart Phone G3",
         "price": 129
-    },
-    {
-        "id": 14,
-        "img": "img/product/product-7.jpg",
-        "img_hover": "img/product/product7.jpg",
-        "name": "Original Mobile Android Dual SIM Smart Phone G3",
-        "price": 180
-    },
-    {
-        "id": 15,
-        "img": "img/product/product-8.jpg",
-        "img_hover": "img/product/product8.jpg",
-        "name": "Original Mobile Android Dual SIM Smart Phone G3",
-        "price": 60
     }
 ]

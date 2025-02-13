@@ -4,6 +4,7 @@ fetch('js/items.json')
                 const  swiper_items_sale = document.getElementById("swiper_items_sale")
 
                 const other_product_swiper = document.getElementById("other_product_swiper")
+                const other_product_swiper2 = document.getElementById("other_product_swiper2")
 
                 all_products_json = data
 
@@ -45,7 +46,7 @@ fetch('js/items.json')
                     </div>
                         `
                     }
-                })
+                });
 
                 data.forEach(product => {
                     if(product.old_price){
@@ -83,5 +84,43 @@ fetch('js/items.json')
                     </div>
                         `
                     }
-                })
+                });
+
+                data.forEach(product => {
+                    if(product.old_price){
+
+                        
+
+                        other_product_swiper2.innerHTML += `
+                        <div class="product swiper-slider">
+
+                        <div class="icons">
+                            <span><i onclick = "addToCart(${product.id}, this)" class="fa-solid fa-cart-arrow-down"></i></span>
+                            <span><i class="fa-solid fa-heart"></i></span>
+                            <span><i class="fa-solid fa-share"></i></span>
+                        </div>
+
+                        <div class="img_product">
+                            <img src="${product.img}" alt="">
+                            <img class="img_hover" src="${product.img_hover}" alt="">
+                        </div>
+
+                        <h3 class="name_product"><a href="#">${product.name}</a></h3>
+                        
+
+                        <div class="stars">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+
+                        <div class="price">
+                            <p><span>${product.price}</span></p>
+                        </div>
+                    </div>
+                        `
+                    }
+                });
             })

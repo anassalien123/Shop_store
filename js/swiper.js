@@ -32,7 +32,7 @@ var swiper = new Swiper(".sale_sec", {
 });
 
 var swiper = new Swiper(".product_swip", {
-    sliderPerView: 5,
+    sliderPerView: 4,
     spaceBetween: 30,
     autoplay:{
     delay:3000,
