@@ -608,3 +608,29 @@ header .links .loging_signup a{
     object-fit: cover;
     border-radius: 5px;
 }
+
+
+/* newsletter */
+
+.newsletter{
+    background: #fff;
+}
+.newsletter .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px 0;
+}
+.newsletter .text{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.newsletter .text img{
+    width: 10px;
+}
+.newsletter .text h4{
+    font-size: 28px;
+    font-weight: 500;
+}
