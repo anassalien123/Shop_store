@@ -67,3 +67,14 @@ function remov_from_cart(index){
         });
     }
 }
+
+// back_to_top
+
+let back_to_top = document.querySelector(".back_to_top")
+
+back_to_top.addEventListener("click", function(){
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    })
+});
