@@ -32,7 +32,11 @@
     </div>
     <nav>
         <div class="links container">
-            <ul>
+            <i onclick="open_menu()" class="fa-solid fa-bars btn_open_menu"></i>
+            <ul id="menu">
+                <span onclick="close_menu()" class="bg-overlay"></span>
+                <i onclick="close_menu()" class="fa-solid fa-xmark btn_close_menu"></i>
+                <img src="img/logo-black.png" alt="" class="logo_menu">
                 <li class="active"><a href="">home</a></li>
                 <li><a href="">all products</a></li>
                 <li><a href="">about us</a></li>
