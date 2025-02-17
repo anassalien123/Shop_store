@@ -779,8 +779,21 @@ header .links ul .btn_close_menu{
     header .top-nav .search{
         width: 420px;
     }
+    .slider .container .side_bar{
+        display: none;
+    }
+    .slider .container .slide-swp{
+        width: 100%;
+    }
+    .features .container .features_item{
+        margin-bottom: 10px;
+        padding: 10px;
+    }
 }
 @media (max-width: 900px) {
+    body{
+        margin-top: 240px;
+    }
     header .top-nav{
         flex-wrap: wrap;
     }
@@ -854,5 +867,9 @@ header .links ul .btn_close_menu{
     header .links ul{
         width: 100%;
         left: -100%;
+    }
+    .cart{
+        width: 100%;
+        right: -100%;
     }
 }
