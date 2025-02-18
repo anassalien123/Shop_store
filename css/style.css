@@ -872,4 +872,13 @@ header .links ul .btn_close_menu{
         width: 100%;
         right: -100%;
     }
+    .product .name_product a{
+        font-size: 13px;
+    }
+    .product{
+        padding: 15px 10px;
+    }
+    .stars i{
+        font-size: 14px;
+    }
 }

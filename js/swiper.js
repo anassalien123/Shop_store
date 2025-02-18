@@ -29,6 +29,23 @@ var swiper = new Swiper(".sale_sec", {
         prevEl:".swiper-button-prev"
     },
     loop:true,
+    breakpoints:{
+        1600:{
+            sliderPerView: 5,
+        },
+        1200:{
+            sliderPerView: 4,
+            spaceBetween: 30,
+        },
+        700:{
+            sliderPerView: 3,
+            spaceBetween: 15,
+        },
+        0:{
+            sliderPerView: 2,
+            spaceBetween: 10,
+        }
+    }
 });
 
 var swiper = new Swiper(".product_swip", {
