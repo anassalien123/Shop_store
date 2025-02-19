@@ -789,6 +789,9 @@ header .links ul .btn_close_menu{
         margin-bottom: 10px;
         padding: 10px;
     }
+    .product{
+        display: none;
+    }
 }
 @media (max-width: 900px) {
     body{
@@ -852,6 +855,12 @@ header .links ul .btn_close_menu{
     header .links ul.active .bg-overlay{
         right: 0;
     }
+    .banner{
+        margin: 0;
+    }
+    .slide{
+        margin-bottom: 50px;
+    }
 }
 @media (max-width: 500px) {
     header .top-nav .search{
@@ -880,5 +889,11 @@ header .links ul .btn_close_menu{
     }
     .stars i{
         font-size: 14px;
+    }
+    .slide{
+        margin-bottom: 30px;
+    }
+    .top_slide h2{
+        font-size: 16px;
     }
 }
