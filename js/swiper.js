@@ -59,4 +59,24 @@ var swiper = new Swiper(".product_swip", {
         prevEl:".swiper-button-prev"
     },
     loop:true,
+    breakpoints:{
+        1500:{
+            sliderPerView: 4,
+        },
+        1200:{
+            sliderPerView: 4,
+            spaceBetween: 30,
+        },
+        900:{
+            sliderPerView: 2,
+        },
+        700:{
+            sliderPerView: 3,
+            spaceBetween: 15,
+        },
+        0:{
+            sliderPerView: 2,
+            spaceBetween: 10,
+        }
+    }
 });

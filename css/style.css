@@ -792,6 +792,16 @@ header .links ul .btn_close_menu{
     .product{
         display: none;
     }
+    .newsletter .container{
+        flex-direction: column;
+        gap: 30px;
+    }
+    .newsletter .container .text{
+        width: 100%;
+    }
+    .newsletter .newsletter_form{
+        flex-wrap: wrap;
+    }
 }
 @media (max-width: 900px) {
     body{
@@ -862,6 +872,7 @@ header .links ul .btn_close_menu{
         margin-bottom: 50px;
     }
 }
+
 @media (max-width: 500px) {
     header .top-nav .search{
         width: 100%;
